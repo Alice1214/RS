@@ -10,7 +10,7 @@ Read-RS-Papers
 ****
 *26篇RS论文阅读笔记*
 ## 目录
-* [1.YouTube RS](#1.YouTube RS)
+* [1.YouTubeRS](#1.YouTubeRS)
 * [2.](#2.)
 * [3.](#3.)
 ### 1.YouTube RS
