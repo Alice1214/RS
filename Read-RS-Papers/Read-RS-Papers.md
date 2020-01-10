@@ -10,9 +10,9 @@ Read-RS-Papers
 ****
 *26篇RS论文阅读笔记*
 ## 目录
-* [1.The Youtube video recommendation system, Acm Conference on Recommender Systems 2010](#1.The Youtube video recommendation system, Acm Conference on Recommender Systems 2010)
+* [1 YouTube RS](#1 YouTube RS)
 
-### 1.The Youtube video recommendation system, Acm Conference on Recommender Systems 2010
+### 1 YouTube RS
 * (1)
      
 * (2)
