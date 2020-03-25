@@ -21,15 +21,13 @@
 
 **3.  NDCG如何计算？**
 
-答：
+答：CG：相关性的累加值；
 
-![img](file://localhost/private/var/folders/13/8srvfrhj3wqbd5zcd_vr7l7m0000gn/T/TemporaryItems/msoclip/0/clip_image002.png)
+DCG：在每一个CG的结果上除以一个折损值，为了让排名靠前的结果能影响最后的结果；
 
-![img](file://localhost/private/var/folders/13/8srvfrhj3wqbd5zcd_vr7l7m0000gn/T/TemporaryItems/msoclip/0/clip_image004.png)
+IDCG：理想情况下最大的DCG值，即结果按照相关性从大到小的顺序排序时的DCG值；
 
-![img](file://localhost/private/var/folders/13/8srvfrhj3wqbd5zcd_vr7l7m0000gn/T/TemporaryItems/msoclip/0/clip_image006.png)
-
-![img](file://localhost/private/var/folders/13/8srvfrhj3wqbd5zcd_vr7l7m0000gn/T/TemporaryItems/msoclip/0/clip_image008.png)
+NDCG：DCG与IDCG的比值（归一化）。
 
 **4.  搜索排序和推荐系统的相同和不同之处有哪些？**
 

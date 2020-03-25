@@ -13,11 +13,7 @@ Attention机制模型：DIN、DIEN、DSIN。
 
 答：用户的兴趣是多样的，对于一个广告商品，只有一部分的历史数据对目前的点击预测有帮助。Attention机制的思想是在pooling的时候，与 candidate Ad 相关的商品权重大一些，与candidate Ad 不相关的商品权重小一些。
 
-原理：在对用户行为的embedding计算上引入了attention network（Activation Unit），通过Attention Unit，对每个兴趣表示赋予不同的权值。Activation Unit输入包括用户行为embedding和候选广告embedding以外，还考虑了他们两个的外积。对于不同的candidate ad，得到的用户行为表示向量也不同
-
-![img](file://localhost/private/var/folders/13/8srvfrhj3wqbd5zcd_vr7l7m0000gn/T/TemporaryItems/msoclip/0/clip_image002.png)
-
-{e1, e2, ..., eH}表示用户U的行为embedding向量，![img](file://localhost/private/var/folders/13/8srvfrhj3wqbd5zcd_vr7l7m0000gn/T/TemporaryItems/msoclip/0/clip_image004.png)表示候选广告A的embedding向量，![img](file://localhost/private/var/folders/13/8srvfrhj3wqbd5zcd_vr7l7m0000gn/T/TemporaryItems/msoclip/0/clip_image006.png)表示对于不同的广告得到的表示向量不同，![img](file://localhost/private/var/folders/13/8srvfrhj3wqbd5zcd_vr7l7m0000gn/T/TemporaryItems/msoclip/0/clip_image008.png)是前馈神经网络，得到的结果是激活权重。
+原理：在对用户行为的embedding计算上引入了attention network（Activation Unit），通过Attention Unit，对每个兴趣表示赋予不同的权值。Activation Unit输入包括用户行为embedding和候选广告embedding以外，还考虑了他们两个的外积，再通过前馈神经网络，计算得到用户行为的激活权重，最终得到用户行为表示向量。对于不同的candidate ad，得到的用户行为表示向量是不同的。
 
 **4.  DIEN相比于DIN有哪些创新？**
 
